@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "packaging_evaluation"
+version = "0.1.0"
+description = "A system for evaluating packaging concepts"
+readme = "README.md"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"},
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "langgraph>=0.0.20",
+    "pydantic>=2.5.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/packaging_evaluation"
+"Bug Tracker" = "https://github.com/yourusername/packaging_evaluation/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["packaging_evaluation"]
